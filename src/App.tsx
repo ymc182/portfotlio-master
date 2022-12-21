@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Footer, NavBar } from "./components";
-import { Projects, Home, About, Header, Works } from "./pages";
+import { Projects, Home, About, Header, Experience, Contact } from "./pages";
 
 function App() {
 	return (
@@ -9,9 +9,8 @@ function App() {
 			<Header />
 			<Projects />
 			<About />
-			<Works />
-
-			{/* 		<Footer /> */}
+			<Experience />
+			<Contact />
 		</div>
 	);
 }

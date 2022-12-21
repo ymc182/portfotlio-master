@@ -52,7 +52,7 @@ function About() {
 	);
 }
 
-export default AppWrapper(About, "Experience", "");
+export default AppWrapper(About, "Skills", "");
 
 function SkillsSection() {
 	return (

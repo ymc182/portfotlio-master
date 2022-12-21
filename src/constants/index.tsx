@@ -1,5 +1,5 @@
 export { default as images } from "./images";
-export const NavLinks = ["Home", "Projects", "Experience", "Works", "About"];
+export const NavLinks = ["Home", "Projects", "Skills", "Experience", "About"];
 
 export const DevIcons = [
 	{

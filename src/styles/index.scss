@@ -60,7 +60,6 @@
 	caret-color: transparent;
 }
 
-body,
 html {
 	box-sizing: border-box;
 	background: var(--bg-color);
@@ -84,8 +83,9 @@ span {
 }
 #Home,
 #Experience,
-#Works,
-#Projects {
+#Skills,
+#Projects,
+#About {
 	position: relative;
 	padding-top: 70px;
 	margin-top: -70px;

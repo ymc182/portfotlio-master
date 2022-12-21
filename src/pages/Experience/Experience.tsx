@@ -1,7 +1,7 @@
 import React from "react";
 import AppWrapper from "../../Wrapper/AppWrapper";
 import { motion } from "framer-motion";
-import "./Works.scss";
+import "./Experience.scss";
 const mockData = [
 	{
 		company: "Edgewood TD",
@@ -34,7 +34,7 @@ const mockData = [
 		res: "Fullstack Development",
 	},
 ];
-function Works() {
+function Experience() {
 	const [selectedCompany, setSelectedCompany] = React.useState(0);
 	return (
 		<div className="app__works">
@@ -98,4 +98,4 @@ function Works() {
 	);
 }
 
-export default AppWrapper(Works, "Works", "");
+export default AppWrapper(Experience, "Experience", "");

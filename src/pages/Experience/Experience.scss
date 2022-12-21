@@ -81,7 +81,7 @@
 	display: flex;
 	padding: 3rem;
 	flex-direction: column;
-
+	max-width: 90vw;
 	border-radius: 0.5rem;
 	min-height: 50vh;
 	@media screen and (max-width: 768px) {
@@ -105,5 +105,12 @@
 		border-radius: 50%;
 		width: 90px;
 		height: 90px;
+	}
+	@media screen and (max-width: 768px) {
+		img {
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+		}
 	}
 }
