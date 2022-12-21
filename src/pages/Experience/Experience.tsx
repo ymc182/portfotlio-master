@@ -1,39 +1,9 @@
 import React from "react";
 import AppWrapper from "../../Wrapper/AppWrapper";
 import { motion } from "framer-motion";
+import { Experiences } from "../../constants/";
 import "./Experience.scss";
-const mockData = [
-	{
-		company: "Edgewood TD",
-		role: "Fullstack Dev",
-		period: "2014 - Present",
-		companyDesc:
-			"Trove labs is a full-stack web 3.0 development firm that specializes in consulting with clients to create efficient project",
-		res: "Fullstack Development",
-		image:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png",
-	},
-	{
-		company: "Meta Café",
-		role: "Blockchain Dev",
-		period: "2021 - 2022",
-		companyDesc:
-			"A Coffee Business built on Near Protocol. Meta Café will initially be a route to market for our own El Café Cartel branded coffee. Meta Café will be an E-commerce platform running solely on web3 harnessing the power and scalability of near blockchain.",
-		image: "https://pbs.twimg.com/profile_images/1588891215096840192/8sbcoFnP_400x400.jpg",
-		link: "https://www.elcafecartel.com/",
-		res: "Fullstack Development",
-	},
-	{
-		company: "Trove Lab",
-		role: "Fullstack Dev",
-		period: "2021 - Present",
-		companyDesc:
-			"Trove labs is a full-stack web 3.0 development firm that specializes in consulting with clients to create efficient project.",
-		image: "https://pbs.twimg.com/profile_images/1535494061502648320/fuFtS2Tw_400x400.jpg",
-		link: "https://www.trovelabs.xyz/",
-		res: "Fullstack Development",
-	},
-];
+
 function Experience() {
 	const [selectedCompany, setSelectedCompany] = React.useState(0);
 	return (
@@ -43,7 +13,7 @@ function Experience() {
 			</div>
 			<div className="app__works-main">
 				<div className="app__works-company-list">
-					{mockData.map((item, index) => {
+					{Experiences.map((item, index) => {
 						return (
 							<div
 								className="app__works-company-list-item"
@@ -58,7 +28,7 @@ function Experience() {
 					})}
 				</div>
 				<div className="app__works-company-detail">
-					{mockData[selectedCompany] && (
+					{Experiences[selectedCompany] && (
 						<motion.div
 							animate={{
 								x: [-50, 0],
@@ -72,24 +42,26 @@ function Experience() {
 						>
 							<div className="app__works-company-detail-title">
 								<main>
-									<h2>{mockData[selectedCompany].company}</h2>
-									<i className="app__works-company-detail-period">{mockData[selectedCompany].period}</i>
-									<div className="app__works-company-detail-role">{mockData[selectedCompany].role}</div>
+									<h2>{Experiences[selectedCompany].company}</h2>
+									<i className="app__works-company-detail-period">{Experiences[selectedCompany].period}</i>
+									<div className="app__works-company-detail-role">{Experiences[selectedCompany].role}</div>
 									<br />
-									<a href={mockData[selectedCompany]?.link} target="_blank" rel="noreferrer">
-										{mockData[selectedCompany]?.link}
+									<a href={Experiences[selectedCompany]?.link} target="_blank" rel="noreferrer">
+										{Experiences[selectedCompany]?.link}
 									</a>
 								</main>
 
-								<img src={mockData[selectedCompany].image} alt="company logo" />
+								<img src={Experiences[selectedCompany].image} alt="company logo" />
 							</div>
 
 							<br />
 							<hr />
 							<br />
-							<div className="app__works-company-detail-responsibilities">{mockData[selectedCompany].companyDesc}</div>
+							<div className="app__works-company-detail-responsibilities">
+								{Experiences[selectedCompany].companyDesc}
+							</div>
 							<br />
-							<div className="app__works-company-detail-responsibilities">{mockData[selectedCompany].res}</div>
+							<div className="app__works-company-detail-responsibilities">{Experiences[selectedCompany].res}</div>
 						</motion.div>
 					)}
 				</div>

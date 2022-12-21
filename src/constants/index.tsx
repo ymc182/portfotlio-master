@@ -1,5 +1,5 @@
 export { default as images } from "./images";
-export const NavLinks = ["Home", "Projects", "Skills", "Experience", "About"];
+export const NavLinks = ["Home", "Projects", "Skills", "Experience", "Contact"];
 
 export const DevIcons = [
 	{
@@ -77,5 +77,36 @@ export const DevIcons = [
 		icon: "devicon-postgresql-plain-wordmark colored",
 		title: "PostgreSQL",
 		level: "Intermediate",
+	},
+];
+export const Experiences = [
+	{
+		company: "Edgewood TD",
+		role: "Fullstack Dev",
+		period: "2017 - Present",
+		companyDesc:
+			"Trove labs is a full-stack web 3.0 development firm that specializes in consulting with clients to create efficient project",
+		res: "Fullstack Development",
+		image: "https://i.ibb.co/sJgjcc6/ewtd-light.png",
+	},
+	{
+		company: "Meta Café",
+		role: "Blockchain Dev",
+		period: "2021 - 2022",
+		companyDesc:
+			"A Coffee Business built on Near Protocol. Meta Café will initially be a route to market for our own El Café Cartel branded coffee. Meta Café will be an E-commerce platform running solely on web3 harnessing the power and scalability of near blockchain.",
+		image: "https://pbs.twimg.com/profile_images/1588891215096840192/8sbcoFnP_400x400.jpg",
+		link: "https://www.elcafecartel.com/",
+		res: "Fullstack Development",
+	},
+	{
+		company: "Trove Lab",
+		role: "Fullstack Dev",
+		period: "2021 - Present",
+		companyDesc:
+			"Trove labs is a full-stack web 3.0 development firm that specializes in consulting with clients to create efficient project.",
+		image: "https://pbs.twimg.com/profile_images/1535494061502648320/fuFtS2Tw_400x400.jpg",
+		link: "https://www.trovelabs.xyz/",
+		res: "Fullstack Development",
 	},
 ];
