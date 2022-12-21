@@ -86,6 +86,7 @@ function SkillsSection() {
 					);
 				})}
 			</div>
+			<div className="app__skills-selected"></div>
 		</div>
 	);
 }
