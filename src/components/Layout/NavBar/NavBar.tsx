@@ -24,7 +24,7 @@ export default function NavBar() {
 			<div className="app__navbar-menu">
 				<HiMenuAlt4 onClick={() => setToggle(true)} />
 				{toggle && (
-					<motion.div whileInView={{ x: [350, 0] }} transition={{ duration: 0.85, ease: "easeInOut" }}>
+					<motion.div whileInView={{ x: [70, 0] }} transition={{ duration: 0.85, ease: "easeInOut" }}>
 						<HiX onClick={() => setToggle(false)} />
 						<ul>
 							{NavLinks.map((link) => {

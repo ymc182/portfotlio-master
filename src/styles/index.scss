@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
-
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
 :root {
 	--primary-color: #efefef;
 	--secondary-color: rgb(51, 200, 193);
+
 	--tertiary-color: rgb(93, 203, 228);
 	--contrast-color: #252525;
 	--primary-font: "DM Sans", sans-serif;
@@ -18,7 +19,38 @@
 	--navbar-logo-width: 3.5rem;
 	--navbar-logo-height: 3.5rem;
 }
-
+//light theme
+.light {
+	--primary-color: #252525;
+	--secondary-color: rgb(51, 200, 193);
+	--tertiary-color: rgb(93, 203, 228);
+	--contrast-color: #efefef;
+	--bg-color: #efefef;
+	--navbar-drawer-bg-color: rgba(255, 255, 255, 0.9);
+	--navbar-bg-color: rgb(255, 255, 255, 0.2);
+	--navbar-border-color: rgba(255, 255, 255, 0.18);
+	--navbar-blur: 10px;
+	--navbar-z-index: 100;
+	--navbar-logo-width: 3.5rem;
+	--navbar-logo-height: 3.5rem;
+}
+//media queries for light theme
+@media (prefers-color-scheme: light) {
+	.light {
+		--primary-color: #252525;
+		--secondary-color: rgb(51, 200, 193);
+		--tertiary-color: rgb(93, 203, 228);
+		--contrast-color: #efefef;
+		--bg-color: #efefef;
+		--navbar-drawer-bg-color: rgba(255, 255, 255, 0.9);
+		--navbar-bg-color: rgb(255, 255, 255, 0.2);
+		--navbar-border-color: rgba(255, 255, 255, 0.18);
+		--navbar-blur: 10px;
+		--navbar-z-index: 100;
+		--navbar-logo-width: 3.5rem;
+		--navbar-logo-height: 3.5rem;
+	}
+}
 * {
 	scroll-behavior: smooth;
 	padding: 0;
@@ -28,7 +60,9 @@
 	caret-color: transparent;
 }
 
-body {
+body,
+html {
+	box-sizing: border-box;
 	background: var(--bg-color);
 }
 .head-text {

@@ -2,19 +2,80 @@ export { default as images } from "./images";
 export const NavLinks = ["Home", "Projects", "Experience", "Works", "About"];
 
 export const DevIcons = [
-	"devicon-javascript-plain colored",
-	"devicon-typescript-plain colored",
-	"devicon-react-original-wordmark colored",
-	"devicon-nodejs-plain-wordmark colored",
-	"devicon-express-original-wordmark",
-	"devicon-svelte-plain colored",
-	"devicon-mongodb-plain-wordmark colored",
-	"devicon-vuejs-plain-wordmark colored",
-	"devicon-rust-plain",
-	"devicon-redis-plain-wordmark colored",
-	"devicon-unity-original",
-	"devicon-docker-plain-wordmark colored",
-	"devicon-git-plain-wordmark colored",
-	"devicon-github-original-wordmark ",
-	"devicon-bootstrap-plain-wordmark colored",
+	{
+		icon: "devicon-react-original colored",
+		title: "React",
+		level: "expert",
+	},
+
+	{
+		title: "Rust",
+		icon: "devicon-rust-plain",
+		level: "Intermediate",
+	},
+	{
+		title: "NodeJS",
+		icon: "devicon-nodejs-plain colored",
+		level: "expert",
+	},
+	{
+		title: "Typescript",
+		icon: "devicon-typescript-plain colored",
+		level: "expert",
+	},
+	{
+		icon: "devicon-csharp-line colored",
+		title: "C#",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-solidity-plain",
+		title: "Solidity",
+		level: "Intermediate",
+	},
+	{
+		title: "Firebase",
+		icon: "devicon-firebase-plain-wordmark colored",
+		level: "expert",
+	},
+	{
+		icon: "devicon-cplusplus-line colored",
+		title: "C++",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-git-plain colored",
+		title: "Git",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-docker-plain-wordmark colored",
+		title: "Docker",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-github-original ",
+		title: "Github",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-amazonwebservices-plain-wordmark colored",
+		title: "AWS",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-unity-original-wordmark",
+		title: "Unity",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-svelte-plain colored",
+		title: "Svelte",
+		level: "Intermediate",
+	},
+	{
+		icon: "devicon-postgresql-plain-wordmark colored",
+		title: "PostgreSQL",
+		level: "Intermediate",
+	},
 ];

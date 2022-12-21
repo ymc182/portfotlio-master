@@ -1,0 +1,109 @@
+.app__works {
+	flex: 1;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+.app__works-main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 90%;
+	gap: 1rem;
+	max-width: 1000px;
+	flex-direction: row;
+	@media screen and (max-width: 768px) {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+.app__works-company-list {
+	flex: 0.3;
+	display: flex;
+
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@media screen and (max-width: 768px) {
+		flex: 1;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}
+.app__works-company-list-item {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-width: 150px;
+	flex-direction: column;
+	cursor: pointer;
+	background-color: var(--contrast-color);
+	border-radius: 0.5rem;
+	border: 2px solid var(--secondary-color);
+	padding: 0.5rem;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: var(--secondary-color);
+		border: 2px solid var(--secondary-color);
+	}
+	i {
+		font-size: 0.75rem;
+		font-weight: lighter;
+	}
+	p {
+		margin-top: 1rem;
+	}
+	@media screen and (max-width: 768px) {
+		min-width: 0;
+		min-height: 140px;
+		i {
+			font-size: 0.65rem;
+			font-weight: lighter;
+		}
+		p {
+			margin-top: 0.8rem;
+		}
+	}
+}
+.app__works-company-detail {
+	box-sizing: border-box;
+	flex: 0.7;
+	display: flex;
+	padding: 3rem;
+	flex-direction: column;
+
+	border-radius: 0.5rem;
+	min-height: 50vh;
+	@media screen and (max-width: 768px) {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	hr {
+		border-bottom: 1px solid var(--secondary-color);
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+}
+.app__works-company-detail-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	img {
+		border-radius: 50%;
+		width: 90px;
+		height: 90px;
+	}
+}
